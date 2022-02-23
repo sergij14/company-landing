@@ -6,7 +6,7 @@ const pages = ['index', 'second'];
 
 const generatePages = () => pages.map((page) => new HtmlWebpackPlugin({
   filename: `${page}.html`,
-  template: `${page}.html`,
+  template: `./pages/${page}.html`,
   inject: true,
   chunks: [page],
 }))
