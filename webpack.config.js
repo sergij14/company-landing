@@ -11,6 +11,11 @@ const config  = {
     filename: 'main.js',
     clean: true, // remove unused bundled files
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 3000,
+    open: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
