@@ -8,13 +8,17 @@ const generatePages = () => pages.map((page) => new HtmlWebpackPlugin({
   filename: `${page}.html`,
   template: `${page}.html`,
   inject: true,
+  chunks: [page],
 }))
 
 const config  = {
-  entry: './src/index.js',
+entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`;
+    return config;
+  }, {}),
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: "main.js",
+    filename: "[name].js",
     clean: true, // remove unused bundled files
   },
   devServer: {
@@ -25,6 +29,11 @@ const config  = {
   plugins: [
     ...generatePages()
   ],
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
   module: {
     rules: [
       {
