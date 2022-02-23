@@ -2,13 +2,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const isProduction = process.env.NODE_ENV === 'production';
 
-const stylesHandler = 'style-loader';
+const pages = ['index', 'second'];
+
+const generatePages = () => pages.map((page) => new HtmlWebpackPlugin({
+  filename: `${page}.html`,
+  template: `${page}.html`,
+  inject: true,
+}))
 
 const config  = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'main.js',
+    filename: "main.js",
     clean: true, // remove unused bundled files
   },
   devServer: {
@@ -17,9 +23,7 @@ const config  = {
     open: true,
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index.html',
-    }),
+    ...generatePages()
   ],
   module: {
     rules: [
@@ -29,7 +33,7 @@ const config  = {
       },
       {
         test: /\.css$/i,
-        use: [stylesHandler, 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
