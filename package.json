@@ -22,5 +22,8 @@
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "start": "webpack serve"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0"
   }
 }
