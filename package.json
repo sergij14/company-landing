@@ -8,8 +8,8 @@
     "live-server": "^1.2.1"
   },
   "scripts": {
-    "start": "npm run build && live-server src --port=8080",
-    "build": "postcss styles.css -o src/styles.css"
+    "start": "npm run build && live-server dist --port=8080",
+    "build": "postcss src/styles.css -o dist/styles.css"
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
