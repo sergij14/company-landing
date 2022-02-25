@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './index.html'
+    './*.html',
+    './partials/*.html',
   ],
   dark: 'media',
   theme: {
