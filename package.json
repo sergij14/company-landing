@@ -10,12 +10,14 @@
     "build": "npm run clean && parcel build ./*.html"
   },
   "dependencies": {
+    "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
-    "tailwindcss": "^3.0.0-alpha.1",
-    "autoprefixer": "^10.3.7"
+    "tailwindcss": "^3.0.0-alpha.1"
   },
   "devDependencies": {
     "parcel": "^2.0.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2",
     "rimraf": "^3.0.2"
   }
 }
