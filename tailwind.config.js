@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.html", "./partials/*.html"],
+  content: ["./*.html", "./partials/**/*.html", "./partials/*.html"],
   dark: "media",
   theme: {
     extend: {
