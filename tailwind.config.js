@@ -20,12 +20,6 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      translate: ["active"],
-      transform: ["active"],
-      textColor: ["active"],
-    },
-  },
+  variants: {},
   plugins: [],
 };
