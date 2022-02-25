@@ -1,13 +1,16 @@
 // DOM elements selection
 const nav = document.querySelector("#nav");
-const navUlID = "#nav-ul";
-const navToggleBtn = document.querySelector("#nav-toggle-btn");
+const navUl = document.querySelector("#nav-ul");
+const navToggleBtns = document.querySelectorAll("#nav-toggle-btn");
 
+// Handlers
 const onToggleNav = () => nav.classList.toggle("nav-visible");
-
-navToggleBtn.addEventListener("click", onToggleNav);
-nav.addEventListener("click", (e) => {
-  if (!e.target.closest("#nav-ul")) {
+const onOverlayClick = (e) => {
+  if (!navUl.contains(e.target)) {
     onToggleNav();
   }
-});
+};
+
+// Event listeners
+navToggleBtns.forEach((btn) => btn.addEventListener("click", onToggleNav));
+nav.addEventListener("click", onOverlayClick);

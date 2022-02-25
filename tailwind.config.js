@@ -10,13 +10,20 @@ module.exports = {
         tertiary: "#d5d5d5",
       },
       backgroundImage: {
-        hero: "url('../assets/images/hero.png')",
-        "menu-open": "url('../assets/images/hamburger.png')",
-        "menu-close": "url('../assets/images/close.png')",
+        hero: "url('../images/hero.png')",
+        "menu-open": "url('../images/hamburger.png')",
+        "menu-close": "url('../images/close.png')",
       },
       fontFamily: {
-        heading: ["'Segoe UI Regular'", "sans-serif"],
+        primary: ["'Segoe UI'", "Arial", "sans-serif"],
       },
+    },
+  },
+  variants: {
+    extend: {
+      translate: ["active"],
+      transform: ["active"],
+      textColor: ["active"],
     },
   },
   plugins: [],

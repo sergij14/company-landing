@@ -5,31 +5,17 @@
         ><img
           class="block mx-auto w-[330px] transition-all delay-75 ease-in-out opacity-80 hover:opacity-100"
           alt="{Company name}"
-          src="./assets/images/logo.png"
+          src="./images/logo.png"
       /></a>
     </h1>
   </div>
-  <div class="bg-primary bg-opacity-90 text-right pt-2 h-10">
+  <div class="bg-primary bg-opacity-90 h-[57px] flex justify-end items-center">
     <button
       id="nav-toggle-btn"
-      class="w-h h-8 bg-menu-open bg-no-repeat text-transparent overflow-hidden"
+      class="w-h h-6 bg-menu-open bg-no-repeat text-transparent focus:outline-none overflow-hidden transform hover:translate-y-[-2px] transition-all delay-100 ease-out"
     >
       open
-
-
-
     </button>
-    <nav class="nav-hidden" id="nav">
-      <ul class="w-[30vw] flex-col items-start justify-start flex bg-primary" id="nav-ul">
-        <li><a class="" href="">Dienstleistungen </a></li>
-        <li><a href="">Suche und Vermittlung</a></li>
-        <li><a href="">Bauprojekte</a></li>
-        <li><a href="">Objekte</a></li>
-        <li><a href="">Über mich</a></li>
-        <li><a href="">Referenzprojekte</a></li>
-        <li><a href="">Zusammenarbeit</a></li>
-        <li><a href="">Preise</a></li>
-      </ul>
-    </ul>
-  </nav>
+  </div>
+  <include src="./partials/nav.html"></include>
 </header>
