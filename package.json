@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf .parcel-cache && rimraf dist",
-    "start": "npm run clean && parcel ./*.html",
+    "start": "npm run clean && parcel serve ./*.html --open",
     "build": "npm run clean && parcel build ./*.html"
   },
   "dependencies": {
