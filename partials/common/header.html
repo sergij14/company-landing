@@ -1,5 +1,5 @@
 <header class="font-heading">
-  <div class="bg-white py-6 bg-opacity-90 px-2">
+  <div class="bg-white py-6 bg-opacity-90 px-2 md:px-4">
     <h1>
       <a href="/"
         ><img
@@ -9,15 +9,17 @@
       /></a>
     </h1>
   </div>
-  <div
-    class="bg-primary bg-opacity-90 h-[57px] flex justify-end items-center px-2"
-  >
-    <button
-      id="nav-toggle-btn"
-      class="w-h h-6 bg-menu-open bg-no-repeat text-transparent focus:outline-none overflow-hidden opacity-80 hover:opacity-100 transition-all delay-100 ease-out"
+  <div class="bg-primary bg-opacity-90 h-[57px]">
+    <div
+      class="max-w-[1390px] mx-auto flex justify-end items-center px-2 md:px-4 h-full"
     >
-      open
-    </button>
+      <button
+        id="nav-toggle-btn"
+        class="w-h h-6 bg-menu-open bg-no-repeat text-transparent focus:outline-none overflow-hidden opacity-80 hover:opacity-100 transition-all delay-100 ease-out"
+      >
+        open
+      </button>
+    </div>
   </div>
   <include src="./partials/common/nav.html"></include>
 </header>
