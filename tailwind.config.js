@@ -15,7 +15,8 @@ module.exports = {
         "menu-close": "url('../images/close.png')",
       },
       fontFamily: {
-        primary: ["'Segoe UI'", "Arial", "sans-serif"],
+        heading: ["'Segoe UI'", "Arial", "sans-serif"],
+        primary: ["Verdana", "sans-serif"],
       },
     },
   },
