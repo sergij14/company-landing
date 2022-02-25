@@ -2,6 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  color: green;
+body{
+  @apply bg-green-400
 }
