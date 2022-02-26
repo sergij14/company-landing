@@ -56,5 +56,5 @@ body {
   @apply absolute bottom-0 w-full flex select-none px-20 items-center h-[90px] bg-white bg-opacity-80 z-20;
 }
 .slider-item-img {
-  @apply block h-full w-full object-cover;
+  @apply h-full w-full object-cover;
 }
