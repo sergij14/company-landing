@@ -43,10 +43,5 @@ const nextImage = (direction) => {
 navCloseBtn.addEventListener("click", onToggleNav);
 navOpenBtn.addEventListener("click", onToggleNav);
 nav.addEventListener("click", onOverlayClick);
-sliderPrev?.addEventListener("click", () => {
-  nextImage("next");
-});
-
-sliderNext?.addEventListener("click", () => {
-  nextImage("prev");
-});
+sliderPrev?.addEventListener("click", () => nextImage("next"));
+sliderNext?.addEventListener("click", () => nextImage("prev"));
