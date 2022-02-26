@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Template Task</title>
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main class="inner-container container-spacing">
+      <section class="flex flex-col">
+        <h2 class="heading-primary">Preise</h2>
+        <article class="flex flex-col gap-4 mt-8 md:mt-12">
+          <h4 class="heading-tertiary mb-2">
+            Vermarktung von Einzelprojekten:
+          </h4>
+          <section class="flex flex-col gap-4 md:flex-row md:gap-16 mb-8">
+            <div class="flex justify-between gap-8 md:w-5/12">
+              <p>Grundhonorar:</p>
+              <p class="text-right">CHF 3‘900.-</p>
+            </div>
+            <div class="md:w-7/12">
+              3D-Tour, professionelle Fotos, Dokumention, 2 Inserate auf
+              Internetportalen, Grundrissüberarbeitung, Besichtigungen,
+              Kundenbearbeitung, Reservationsvertrag
+            </div>
+          </section>
+          <section class="flex flex-col gap-4 md:flex-row md:gap-16 mb-8">
+            <div class="flex justify-between gap-8 md:w-5/12">
+              <p>Erfolgsprovision:</p>
+              <p class="text-right">2-3%</p>
+            </div>
+            <div class="md:w-7/12">
+              abzgl. Grundhonorar, mindestens aber Fr. 10'000.- ( Koordination
+              und Überprüfung des Kaufvertrages und Terminierung der notariellen
+              Beurkundung sowie Objektübergabe )
+            </div>
+          </section>
+          <p class="mb-4">Vermarktung von Überbauungen auf Anfrage.</p>
+          <p class="mb-4">
+            Für zusätzliche Werbemassnahmen, wie Zeitungsinserate etc., wird ein
+            Kostendach individuell vereinbart.
+          </p>
+        </article>
+        <article class="flex flex-col gap-4 mt-8 md:mt-12">
+          <h4 class="heading-tertiary mb-2">Generelle Dienstleistungen:</h4>
+          <section class="flex flex-col gap-4 md:flex-row md:gap-16 mb-8">
+            <div class="flex justify-between gap-8 md:w-5/12">
+              <p>Stundensatz</p>
+              <p class="text-right">CHF 150 - 180.-</p>
+            </div>
+            <div class="md:w-7/12"></div>
+          </section>
+        </article>
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
