@@ -11,8 +11,6 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('../images/hero.png')",
-        "menu-open": "url('../images/hamburger.png')",
-        "menu-close": "url('../images/close.png')",
       },
       fontFamily: {
         heading: ["'Segoe UI'", "Arial", "sans-serif"],

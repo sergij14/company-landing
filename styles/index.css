@@ -3,14 +3,11 @@
 @import "tailwindcss/utilities";
 
 @layer utilities {
-  .app-container {
-    @apply text-base text-secondary bg-hero bg-no-repeat bg-cover font-primary;
-  }
   .inner-container {
     @apply max-w-[1390px] mx-auto;
   }
   .nav-btn {
-    @apply bg-no-repeat text-transparent focus:outline-none overflow-hidden opacity-80 hover:opacity-100;
+    @apply opacity-80 hover:opacity-100;
   }
   .nav-ul {
     @apply w-full sm:w-[70vw] md:w-[45vw] lg:w-[35vw] max-w-[765px] flex-col items-start justify-start flex bg-primary;
@@ -18,11 +15,37 @@
   .transition-primary {
     @apply transition-all delay-150 ease-in-out;
   }
+  .transition-secondary {
+    @apply transition-all delay-300 ease-in-out;
+  }
+  .heading-primary {
+    @apply text-4xl font-semibold font-heading;
+  }
+  .heading-secondary {
+    @apply text-2xl font-semibold font-heading;
+  }
+}
+
+body {
+  @apply text-base text-secondary bg-hero bg-no-repeat bg-cover font-primary;
 }
 
 .nav-hidden {
-  @apply w-full flex items-stretch h-full opacity-0 bg-black bg-opacity-40 absolute top-0 left-0 z-30 transform -translate-x-64 pointer-events-none;
+  @apply w-full flex items-stretch h-full opacity-0 bg-black bg-opacity-40 fixed top-0 left-0 z-50 transform -translate-x-64 pointer-events-none;
 }
 .nav-visible {
   @apply opacity-100 -translate-x-0 pointer-events-auto;
+}
+
+.slider-item {
+  @apply absolute h-full w-full transform -translate-x-1/4 opacity-0 z-10;
+}
+.slider-main-item {
+  @apply -translate-x-0 opacity-100;
+}
+.slider-item-caption {
+  @apply absolute bottom-0 w-full flex select-none px-20 items-center h-[90px] bg-white bg-opacity-80 z-20;
+}
+.slider-item-img {
+  @apply block h-full w-full object-cover;
 }
