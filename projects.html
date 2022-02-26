@@ -8,15 +8,70 @@
     <title>Template Task</title>
   </head>
   <body>
-    <include src="partials/common/header.html"></include>
-    <main class="inner-container bg-white p-24 mt-28">
-      <article>
-        <h3 class="heading-primary">Referenzprojekte</h3>
+    <include src="partials/header.html"></include>
+    <main class="inner-container container-spacing">
+      <section>
+        <h2 class="heading-primary mb-2">Referenzprojekte</h2>
         <p>(aus bisherigen Tätigkeiten)</p>
-        <include src="partials/common/slider.html"></include>
-      </article>
+        <include src="partials/slider.html"></include>
+      </section>
+      <section class="mt-8">
+        <h3 class="heading-secondary mb-2">Verkauf</h3>
+        <ul class="list-disc list-inside">
+          <li>Wohnüberbauung Kronenmatt A und B, Sattel</li>
+          <li>Wohnüberbauung Rösslimatt B und C, Sattel</li>
+          <li>Ladenhaus Kronenmatt, Sattel</li>
+          <li>Sanierung und Vermietung Wohn- und Gewerbehaus Krone, Sattel</li>
+          <li>6 Doppeleinfamilienhäuser, Grossstein, Ibach</li>
+          <li>
+            3 Mehrfamilienhäuser im Stockwerkweigentum, Untere Kirchfeldstrasse,
+            Affoltern a. Albis
+          </li>
+          <li>
+            26 Doppel- und Reiheneinfamilienhäuser, Steinbaumstrasse, Ebertswil
+            ( ZH )
+          </li>
+          <li>
+            2 Mehrfamilienhäuser im Stockwerkeigentum und 12
+            Doppeleinfamilienhäuser, Kappel a. Albis ( ZH)
+          </li>
+          <li>
+            2 Mehrfamilienhäuser im Stockwerkeigentum, Kastanienbaumstrasse,
+            Kastanienbaum ( Horw )
+          </li>
+          <li>Mehrfamilienhaus im Stockwerkeigentum, Suststrasse, Brunnen</li>
+          <li>
+            Mehrfamlienhaus im Stockwerkeigentum, Sustenstrasse,
+            Zürich-Altstetten
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h3 class="heading-secondary mb-2">Erstvermietung</h3>
+        <ul class="list-disc list-inside">
+          <li>Wohnüberbauung Gubel Hof, Gubelstrasse, Zug</li>
+          <li>Wohnüberbauung zur Suure, Münigenstrasse,</li>
+          <li>Wohnen im Alter, Axenstrasse, Flüelen</li>
+          <li>Mehrfamilienhaus, Föhneneichstrasse, Brunnen</li>
+          <li>Luxuriöse Wohnüberbauung, Seemattweg, Küssnacht a. Rigi</li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h3 class="heading-secondary mb-2">
+          Begleitung von externen Vermarktungen, Erstvermietung oder Verkauf
+        </h3>
+        <ul class="list-disc list-inside">
+          <li>Wohnüberbauung, Mon Désir, in Orselina</li>
+          <li>Wohnüberbauung Schimbrigblick, Kommetsrüti, Wolhusen LU</li>
+          <li>Wohnüberbauung, Floracity, Paradiso</li>
+          <li>Wohnüberbauung Grünegg, Beromünster</li>
+          <li>Marktauftritt, Wohnüberbauung "am oeliweiher" Gossau ZH</li>
+        </ul>
+      </section>
     </main>
-    <footer class="bg-white">footer</footer>
+    <include src="partials/footer.html"></include>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
