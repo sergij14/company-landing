@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Template Task</title>
+  </head>
+  <body class="app-container">
+    <include src="partials/header.html"></include>
+    <main class="inner-container container-spacing">
+      <section class="flex flex-col">
+        <h2 class="heading-primary">Kaufobjekte</h2>
+        <article
+          class="flex flex-col gap-4 lg:flex-row lg:gap-16 my-6 md:my-16"
+        >
+          <div class="lg:w-1/2">
+            <img src="./images/sample-img_3.jpg" />
+          </div>
+          <div class="lg:w-1/2">
+            <h4 class="heading-tertiary mb-4">
+              Luxuriöse 3,5 Zimmer Wohnung in Brunnen
+            </h4>
+            <div class="flex flex-col gap-6">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+              <p class="font-semibold">Kaufpreis CHF 1‘500‘000.-</p>
+            </div>
+            <ul class="flex flex-col items-start gap-3 font-semibold mt-8">
+              <li class="flex items-center gap-4">
+                <a href="#" class="text-primary">ImmoScout24</a>
+                <img
+                  class="w-[8px] h-[13px]"
+                  src="./images/arrow-primary.png"
+                />
+              </li>
+              <li class="flex items-center gap-4">
+                <a href="#" class="text-primary">Homegate</a>
+                <img
+                  class="w-[8px] h-[13px]"
+                  src="./images/arrow-primary.png"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <h2 class="heading-primary">Mietobjekte</h2>
+        <article
+          class="flex flex-col gap-4 lg:flex-row lg:gap-16 my-6 md:my-16"
+        >
+          <div class="lg:w-1/2">
+            <img src="./images/sample-img_3.jpg" />
+          </div>
+          <div class="lg:w-1/2">
+            <h4 class="heading-tertiary mb-4">
+              Luxuriöse 3,5 Zimmer Wohnung in Brunnen
+            </h4>
+            <div class="flex flex-col gap-6">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+              <p class="font-semibold">
+                Mietpreis CHF 4665.- inkl. Nebenkosten
+              </p>
+            </div>
+            <ul class="flex flex-col items-start gap-3 font-semibold mt-8">
+              <li class="flex items-center gap-4">
+                <a href="#" class="text-primary">ImmoScout24</a>
+                <img
+                  class="w-[8px] h-[13px]"
+                  src="./images/arrow-primary.png"
+                />
+              </li>
+              <li class="flex items-center gap-4">
+                <a href="#" class="text-primary">Homegate</a>
+                <img
+                  class="w-[8px] h-[13px]"
+                  src="./images/arrow-primary.png"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
