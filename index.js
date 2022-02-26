@@ -1,7 +1,8 @@
 // DOM elements selection
 const nav = document.querySelector("#nav");
 const navUl = document.querySelector("#nav-ul");
-const navToggleBtns = document.querySelectorAll("#nav-toggle-btn");
+const navOpenBtn = document.querySelector("#nav-open-btn");
+const navCloseBtn = document.querySelector("#nav-close-btn");
 
 const sliderPrev = document.querySelector("#slider-prev");
 const sliderNext = document.querySelector("#slider-next");
@@ -39,7 +40,8 @@ const nextImage = (direction) => {
 };
 
 // Event listeners
-navToggleBtns.forEach((btn) => btn.addEventListener("click", onToggleNav));
+navCloseBtn.addEventListener("click", onToggleNav);
+navOpenBtn.addEventListener("click", onToggleNav);
 nav.addEventListener("click", onOverlayClick);
 sliderPrev?.addEventListener("click", () => {
   nextImage("next");
