@@ -7,10 +7,10 @@
     @apply max-w-[1390px] mx-auto;
   }
   .container-spacing {
-    @apply bg-white p-8 sm:p-12 md:p-16 lg:p-24 mt-28;
+    @apply bg-white p-4 sm:p-12 md:p-16 lg:p-24 mt-28;
   }
   .footer-spacing {
-    @apply bg-tertiary px-8 sm:px-12 md:px-16 lg:px-24 py-8 md:py-10;
+    @apply bg-tertiary px-4 sm:px-12 md:px-16 lg:px-24 py-8 md:py-10;
   }
   .nav-btn {
     @apply opacity-80 hover:opacity-100;
