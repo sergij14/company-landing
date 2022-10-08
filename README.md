@@ -1,2 +1,2 @@
 # Company Landing
-Company landing HTML/CSS. Created with Tailwind CSS.
+Company landing HTML/CSS template. Created with Tailwind CSS & HTML partials.
